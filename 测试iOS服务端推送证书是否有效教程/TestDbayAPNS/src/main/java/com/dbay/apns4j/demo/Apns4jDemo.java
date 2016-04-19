@@ -31,7 +31,7 @@ public class Apns4jDemo {
 			InputStream is = Apns4jDemo.class.getClassLoader().getResourceAsStream("push.p12");
 			config.setKeyStore(is);
 			config.setDevEnv(true);//设置是否为开发模式，false为发布模式，true为调试模式
-			config.setPassword("ahw123456");//证书密码
+			config.setPassword("123456");//证书密码
 			config.setPoolSize(3);
 			apnsService = ApnsServiceImpl.createInstance(config);
 		}
